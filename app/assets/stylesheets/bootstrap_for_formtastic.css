@@ -238,7 +238,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 }
 
 .formtastic .choice {
-  margin:0.1em 0 0.5em 0;
+  margin:0.7em 0 0.5em;
 }
 
 .formtastic .choice label {
@@ -291,7 +291,19 @@ This stylesheet forms part of the Formtastic Rails Plugin
   padding:0;
 }
 
-/************ Self added ************/
+/************ Added on formtastic css ************/
+
+/**** Legends ****/
+.formtastic fieldset legend {
+  color: #404040;
+  display: block;
+  font-size: 19.5px;
+  font-weight: bold;
+  line-height: 1;
+  padding-bottom: 10px;
+  padding-left: 150px;
+  padding-top: 18px;
+}
 
 /* Formtastic in modals */
 
@@ -324,6 +336,7 @@ form.formtastic {
 
 .formtastic select {
   width: 410px;
+  height: 32px;
 }
 
 .formtastic input[type~="submit"] {
@@ -431,16 +444,21 @@ abbr[title] {
 
 
 .formtastic.small .input label {
+  font-size: 14px;
+}
+
+.formtastic.small.form-stacked .input label {
   font-size: 13px;
 }
 
 .formtastic.small .input input, .formtastic.small .input textarea, .formtastic.small .input .uneditable-input {
   width: 320px;
+  height: 18px;
 }
 
 .formtastic.small select{
   width: 330px;
-  height: 32px;
+  height: 28px;
 }
 
 .formtastic.small input[type~="submit"] {
