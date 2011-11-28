@@ -422,23 +422,20 @@ abbr[title] {
 
 /******* Smaller forms - smaller text with smaller fields (suitable for sidebars & modals) ***********/
 
-.formtastic.small {
 
-  .input label {
-    font-size: 13px;
-  }
+.formtastic.small .input label {
+  font-size: 13px;
+}
 
-  .input input, .input textarea, .input .uneditable-input {
-    width: 320px;
-  }
+.formtastic.small .input input, .formtastic.small .input textarea, .formtastic.small .input .uneditable-input {
+  width: 320px;
+}
 
-  select{
-    width: 330px;
-    height: 32px;
-  }
+.formtastic.small select{
+  width: 330px;
+  height: 32px;
+}
 
-  input[type~="submit"] {
-    width: auto;
-  }
-
+.formtastic.small input[type~="submit"] {
+  width: auto;
 }
