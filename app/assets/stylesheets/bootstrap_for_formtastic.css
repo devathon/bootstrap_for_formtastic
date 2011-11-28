@@ -318,8 +318,12 @@ form.formtastic {
   padding-top: 0;
 }
 
-.formtastic input, .formtastic textarea, .formtastic select, .formtastic .uneditable-input {
+.formtastic .input input, .formtastic .input textarea, .formtastic .input .uneditable-input {
   width: 400px;
+}
+
+.formtastic select {
+  width: 410px;
 }
 
 .formtastic input[type~="submit"] {
@@ -344,12 +348,12 @@ form.formtastic {
 }
 
 /* Stacked Form(Form labels just above the input elements) */
-.form-stacked label {
+.form-stacked.formtastic label {
   float: none !important;
   font-weight: normal;
 }
 
-.form-stacked .label, .form-stacked .label label {
+.form-stacked.formtastic .label, .form-stacked .label label {
   font-weight: bold;
 }
 
@@ -358,15 +362,20 @@ form.formtastic {
     padding: 30px 0 0;
 }
 
-.form-stacked .nonstacked .label label {
+.form-stacked.formtastic .nonstacked .label label {
     padding-top: 8px;
 }
 
-.form-stacked .input {
+.form-stacked.formtastic .input {
     margin-left: 10px;
 }
-.form-stacked .inline-errors {
+
+.form-stacked.formtastic .inline-errors {
     margin: 0.5em 0 0 0;
+}
+
+.formtastic.form-stacked {
+  padding-left: 0;
 }
 
 /* Undo changes done by bootstrap due to clashing classes*/
@@ -402,4 +411,34 @@ abbr[title] {
 
 .filteringmsg td {
   text-align: center;
+}
+
+/******************* Fixing styling for select boxes **********************/
+.formtastic select {
+  color: #1B1A1A;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/******* Smaller forms - smaller text with smaller fields (suitable for sidebars & modals) ***********/
+
+.formtastic.small {
+
+  .input label {
+    font-size: 13px;
+  }
+
+  .input input, .input textarea, .input .uneditable-input {
+    width: 320px;
+  }
+
+  select{
+    width: 330px;
+    height: 32px;
+  }
+
+  input[type~="submit"] {
+    width: auto;
+  }
+
 }
