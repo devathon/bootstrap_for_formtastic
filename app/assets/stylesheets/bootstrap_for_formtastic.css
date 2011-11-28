@@ -318,7 +318,7 @@ form.formtastic {
   padding-top: 0;
 }
 
-.formtastic .input input, .formtastic .input textarea, .formtastic .input .uneditable-input {
+.formtastic input, .formtastic textarea, .formtastic .uneditable-input {
   width: 400px;
 }
 
@@ -413,12 +413,19 @@ abbr[title] {
   text-align: center;
 }
 
-/******************* Fixing styling for select boxes **********************/
+/**Select boxes **/
 .formtastic select {
   color: #1B1A1A;
   font-weight: bold;
   font-size: 14px;
 }
+
+/* checkboxes/radios */
+
+.formtastic input[type="checkbox"], .formtastic input[type="radio"] {
+  width: auto;
+}
+
 
 /******* Smaller forms - smaller text with smaller fields (suitable for sidebars & modals) ***********/
 
