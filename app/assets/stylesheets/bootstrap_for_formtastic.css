@@ -451,9 +451,14 @@ abbr[title] {
   font-size: 13px;
 }
 
-.formtastic.small .input input, .formtastic.small .input textarea, .formtastic.small .input .uneditable-input {
+.formtastic.small .input input, .formtastic.small .input .uneditable-input {
   width: 320px;
   height: 18px;
+}
+
+.formtastic.small .input textarea {
+  width: 320px;
+  height: 36px;  
 }
 
 .formtastic.small select{
