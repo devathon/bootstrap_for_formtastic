@@ -451,20 +451,21 @@ abbr[title] {
   font-size: 13px;
 }
 
-.formtastic.small .input input, .formtastic.small .input .uneditable-input {
-  width: 320px;
-  height: 18px;
-}
-
 .formtastic.small .input textarea {
-  width: 320px;
+  width: 270px;
   height: 36px;  
 }
 
-.formtastic.small select{
-  width: 330px;
+.formtastic.small select {
+  width: 280px;
   height: 28px;
 }
+
+.formtastic.small .input input, .formtastic.small .input .uneditable-input {
+  width: 270px;
+  height: 18px;
+}
+
 
 .formtastic.small input[type~="submit"] {
   width: auto;
